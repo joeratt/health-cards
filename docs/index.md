@@ -68,7 +68,7 @@ This section outlines higher-level design considerations. See [Protocol Details]
 ### Getting credentials into Health Wallet
 * Required method: File download
 * Required method: Print QR on paper card, or scan QR into software
-* Optional method: [FHIR API Access](#healthwalletissuevc-operation)
+* Optional method: [FHIR API Access](#health-cards-issue-operation)
 
 ### Presenting credentials to Verifier
 * Optional method: QR presentation
@@ -304,7 +304,7 @@ A SMART on FHIR Server advertises support for issuing VCs according to this spec
 }
 ```
 
-<a name="healthwalletissuevc-operation"></a>
+<a name="health-cards-issue-operation"></a>
 #### `$health-cards-issue` Operation
 
 A Health Wallet can `POST /Patient/:id/$health-cards-issue` to a FHIR-enabled issuer to request the generation of a specific type of Health Card. The body of the POST looks like:
